@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "frontend/pages/waiter/waiter"
+  ],
+  "window": {
+    "navigationBarTitleText": "宝宝小程序"
+  }
+}

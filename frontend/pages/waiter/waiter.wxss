@@ -1,0 +1,6 @@
+.container { padding: 16px; }
+.field { margin-bottom: 12px; display: flex; align-items: center; }
+.field label { width: 80px; color: #333; }
+.field input { flex: 1; padding: 8px; border: 1px solid #eee; border-radius: 4px; }
+.submit { width: 100%; background: #1AAD19; color: #fff; padding: 12px 0; border-radius: 6px; }
+.hint { margin-top: 12px; color: #888; font-size: 12px; }

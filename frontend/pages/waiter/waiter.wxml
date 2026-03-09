@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="field">
+    <label>目标歌手</label>
+    <picker mode="selector" range="{{singers}}" range-key="displayName" value="{{selectedSingerIndex}}" bindchange="onSingerChange">
+      <view class="picker">{{singers.length>0 ? singers[selectedSingerIndex].displayName : '请选择歌手'}}</view>
+    </picker>
+  </view>
+  <view class="field">
+    <label>曲目</label>
+    <input placeholder="歌曲标题" data-key="title" value="{{title}}" bindinput="handleInput" />
+  </view>
+  <view class="field">
+    <label>歌手/艺人</label>
+    <input placeholder="歌手/艺人" data-key="artist" value="{{artist}}" bindinput="handleInput" />
+  </view>
+  <view class="field">
+    <label>点歌人/服务员</label>
+    <input placeholder="你的名字（可选）" data-key="requesterName" value="{{requesterName}}" bindinput="handleInput" />
+  </view>
+  <view class="field">
+    <label>桌号</label>
+    <input placeholder="桌号/位置（可选）" data-key="tableId" value="{{tableId}}" bindinput="handleInput" />
+  </view>
+
+  <button class="submit" bindtap="submitRequest">提交点歌</button>
+
+  <view class="hint">提示：提交后可在歌手端由歌手接受或拒绝。</view>
+</view>
